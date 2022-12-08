@@ -1,0 +1,26 @@
+body {
+    font-family: var(--font-rob);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: calc(19 / 16);
+  
+    background-color: var(--primary-bg-color);
+    color: var(--title-text-color);
+  }
+
+  .link {
+  text-decoration: none;
+  }
+
+  address {
+    font-style: normal;
+  }
+  
+  img {
+    display: block;
+  }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
