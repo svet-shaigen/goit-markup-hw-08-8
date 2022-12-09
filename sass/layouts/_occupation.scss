@@ -33,4 +33,11 @@
   .occupation-img-list {
     position: relative;
   }
+
+  .occupation {
+   
+    @media screen and (max-width:1199px) {
+      display: none;
+    }
+  }
   
