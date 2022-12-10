@@ -2,26 +2,46 @@
   display: flex; 
   flex-direction: column;
   align-items: center;
-    
+
   width: 100%;
-   
-    padding-top: 118px;
-    padding-bottom: 118px;
-   
-    text-align: center;
-  
-    background-image: linear-gradient(
+  text-align: center;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+      url(../images/hero-bg-mob.jpg);
+    
 
-    @media screen and (min-width:1200px) {
-    padding-top: 200px;
-    padding-bottom: 200px; 
+    @mixin mobile {
+      background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero-bg-tab.jpg);
+        }
+
+  @include tablet {
+      background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+              ),
+              url(../images/hero.jpg);
+            }
+
+
+   @include desktop {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    
     }
   }
   
