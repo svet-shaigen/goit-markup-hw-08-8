@@ -23,7 +23,7 @@
 
   
   
-  @media screen and (min-width: 480px) {
+    @include mobile {
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -36,7 +36,7 @@
 
 
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 100%;
       height: auto;
         background-image: var(--gra),
@@ -54,7 +54,8 @@
 }
     }
 
-  @media screen and (min-width: 1200px) {
+ 
+    @include desktop {
       padding-top: 200px;
       padding-bottom: 200px;
       max-width: 1600;
@@ -91,7 +92,7 @@
   
     color: var(--white-text-color);
 
-    @media screen and (min-width:1200px) {
+    @include desktop {
       line-height: calc(60 / 44);
       font-size: 44px;
       }
@@ -100,7 +101,7 @@
         max-width: 360px;
       }
   
-      @media screen and (min-width:1200px) {
+      @include desktop {
         max-width: 696px;
       }
    
