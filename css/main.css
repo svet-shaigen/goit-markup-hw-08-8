@@ -22,6 +22,8 @@
   --border-modal-focus: rgba(33, 150, 243, 1);
   --border-footer-form: rgba(255, 255, 255, 0.3);
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --gra: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4));
 }
 
 h1,
@@ -240,25 +242,49 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: auto;
+  max-width: 100%;
   text-align: center;
+  margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-mob.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
+  background-image: var(--gra), url(../images/hero-bg-mob.jpg);
+  background-size: cover;
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gra), url(../../images/hero-bg-mob-2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    width: 100%;
+    height: auto;
+    background-image: var(--gra), url(../images/hero-bg-tab.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (min-width: 768px) {
+  .hero {
+    background-image: var(--gra), url(../images/hero-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600;
+    height: 600;
+    background-image: var(--gra), url(../images/hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-width: 1200px) and (min-width: 1600px) {
+  .hero {
+    background-image: var(--gra), url(../images/hero-2x.jpg);
+    background-size: cover;
   }
 }
 
