@@ -10,22 +10,35 @@
   text-align: center;
   
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--secondary-bg-color);
 
-
-
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--secondary-bg-color);
+  
   }
+
+ .footer-container {
+  @media screen and (min-width:768px) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ }
+}
 
   .footer-address {
     margin-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+      text-align: left;
+      margin-bottom: 0;
+      }
   }
 
   .logo-footer {
     display: inline-block;
     margin-bottom: 28px;
     color: var(--white-text-color);
+
   }
   
   .footer-item {
@@ -61,16 +74,22 @@
     color: var(--primary-bg-color);
   }
   
-  /*footer .container {
+  footer .container {
+    @media screen and (min-width:1200px){
     display: flex;
     align-items: baseline;
-  }*/
+    }
+  }
   
   .footer-soc-list {
     display: flex;
     gap: 10px;
     justify-content: center;
     margin-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+      margin-bottom: 0;
+    }
   }
   
   .footer-soc-icon {
@@ -99,16 +118,20 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  /*.footer-soc {
-    margin-left: 70px;
+
+    @media screen and (min-width:1200px) {
+      text-align: left;
+      }
     
   }
   
-  /*.footer-soc-form {
+  
+  
+  .footer-soc-form {
+    @media screen and (min-width:1200px) {
     margin-left: 93px;
-  }*/
+    }
+  }
   
   .footer-soc-title {
     display: block;
@@ -120,6 +143,10 @@
     margin-bottom: 20px;
   
     color: var(--primary-bg-color);
+
+    @media screen and (min-width:1200px) {
+      text-align: left;
+    }
   }
   
   .footer-input {
@@ -149,10 +176,14 @@
     
       color: var(--contact-text-color);
     }
+
+    @media screen and (min-width:1200px) {
+      width: 358px;
+    }
   }
   
    .footer-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 200px;
@@ -164,7 +195,7 @@
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
   
-    margin-left: 12px;
+    margin: 0 auto;
   
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -173,6 +204,11 @@
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
     cursor: pointer;
+
+    @media screen and (min-width:1200px) {
+      display: inline-flex;
+      margin-left: 12px;
+    }
   }
   
   .footer-vector-icon {
