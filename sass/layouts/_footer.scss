@@ -1,16 +1,35 @@
 .footer {
+  /*display: flex; 
+  flex-direction: column;*/
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  max-width: 100%;
+  text-align: center;
+  
+  margin: 0 auto;
+
+
+
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--secondary-bg-color);
   }
+
+  .footer-address {
+    margin-bottom: 60px;
+  }
+
   .logo-footer {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     color: var(--white-text-color);
   }
   
   .footer-item {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
   }
   
   .footer-item:last-child {
@@ -20,7 +39,7 @@
   .footer-link,
   .footer-contact {
     display: inline-block;
-    line-height: calc(24 / 14);
+    line-height: calc(16 / 14);
   
     color: var(--white-text-color);
   }
@@ -35,23 +54,23 @@
     }
   }
   
- 
-  
-  .footer-soc-text {
+ .footer-soc-text {
     line-height: calc(16 / 14);
     text-transform: uppercase;
   
     color: var(--primary-bg-color);
   }
   
-  footer .container {
+  /*footer .container {
     display: flex;
     align-items: baseline;
-  }
+  }*/
   
   .footer-soc-list {
     display: flex;
     gap: 10px;
+    justify-content: center;
+    margin-bottom: 60px;
   }
   
   .footer-soc-icon {
@@ -76,24 +95,26 @@
     }
   }
   
- 
-  
-  .footer-soc-text {
+ .footer-soc-text {
+    margin: 0 auto;
+    text-align: center;
     margin-bottom: 20px;
   }
   
-  .footer-soc {
+  /*.footer-soc {
     margin-left: 70px;
+    
   }
   
-  .footer-soc-form {
+  /*.footer-soc-form {
     margin-left: 93px;
-  }
+  }*/
   
   .footer-soc-title {
     display: block;
     font-size: 14px;
     line-height: calc(16 / 14);
+    text-align: center;
   
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -103,7 +124,7 @@
   
   .footer-input {
     outline: none;
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid var(--border-footer-form);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -111,6 +132,7 @@
     padding: 15px 16px;
     font-size: 14px;
     color: var(--border-header-color);
+    margin-bottom: 20px;
   
     background-color: transparent;
   
@@ -129,11 +151,7 @@
     }
   }
   
-  
-  
- 
-  
-  .footer-btn {
+   .footer-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
