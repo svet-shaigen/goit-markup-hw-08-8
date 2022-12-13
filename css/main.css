@@ -926,6 +926,12 @@ img {
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0);
@@ -935,9 +941,14 @@ img {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
 }
 
 .modal-input {
@@ -969,38 +980,60 @@ img {
 }
 .modal-comment::-webkit-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: var(--comment-modal-color);
 }
 .modal-comment::-moz-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: var(--comment-modal-color);
 }
 .modal-comment:-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: var(--comment-modal-color);
 }
 .modal-comment::-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: var(--comment-modal-color);
 }
 .modal-comment::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: var(--comment-modal-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-comment::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .modal-comment::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .modal-comment:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .modal-comment::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .modal-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
 }
 .modal-comment:focus {
   border-color: var(--border-modal-focus);
@@ -1084,8 +1117,8 @@ img {
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1098,6 +1131,12 @@ img {
   margin-bottom: 30px;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
+}
 
 .check-link {
   margin-left: 5px;
@@ -1107,14 +1146,20 @@ img {
   content: "";
   color: var(--accent-color);
   position: absolute;
-  left: 148px;
-  bottom: 4px;
+  left: 130px;
+  bottom: 3px;
   display: block;
   width: 100%;
   height: 1px;
   -webkit-transform: scaleX(0.25);
           transform: scaleX(0.25);
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .check-link::after {
+    left: 148px;
+    bottom: 4px;
+  }
 }
 
 .modal-field {
