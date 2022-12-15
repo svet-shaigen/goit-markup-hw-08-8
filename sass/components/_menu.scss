@@ -80,13 +80,17 @@
         line-height: calc (40 / 34);
         letter-spacing: 0.02em;
         color: var(--accent-color);
-        margin-bottom: 32px;
+       
+    }
+
+    .mob-menu-contact__list:not(:last-child) {
+        margin-bottom: 32px; 
     }
 
     .mob-menu-mail__link {
         font-weight: 500;
         font-size: 24px;
-        line-height: (28 /24);
+        line-height: (28 / 24);
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
     }

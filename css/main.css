@@ -1407,6 +1407,9 @@ img {
   line-height: calc 1.1764705882;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.mob-menu-contact__list:not(:last-child) {
   margin-bottom: 32px;
 }
 
