@@ -169,7 +169,7 @@ img {
   color: var(--accent-color);
 }
 
-button > svg > use .header__contact {
+.header__contact {
   font-weight: 500;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
