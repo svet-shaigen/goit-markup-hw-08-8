@@ -1,4 +1,4 @@
-.menu-btn {
+.menu-open {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,11 +6,30 @@
     padding: 0;
     
     margin-left: auto;
-    
+
     width: 40px;
     height: 40px;
 
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    .menu-open:hover &,
+    .menu-open:focus & {
+    fill: var(--accent-color);
+  }
+   
+}
+
+
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-bg-color);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
 }

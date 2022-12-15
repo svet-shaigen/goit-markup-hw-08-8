@@ -1323,7 +1323,7 @@ img {
           transform: translateY(0);
 }
 
-.menu-btn {
+.menu-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1340,4 +1340,18 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+.menu-open:hover .menu-open, .menu-open:focus .menu-open {
+  fill: var(--accent-color);
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-bg-color);
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
 }/*# sourceMappingURL=main.css.map */
