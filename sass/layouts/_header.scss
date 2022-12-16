@@ -86,7 +86,6 @@
 .contact__link {
 display: flex;
 align-items: center;
-justify-content: center;
 gap: 10px;
 color: var(--primary-text-color);
 
@@ -95,7 +94,20 @@ color: var(--primary-text-color);
  color: var(--accent-color);
 }
 
+@include tablet {
+   font-weight: 500;
+   font-size: 12px;
+   line-height: calc(14 / 12)
+
+   letter-spacing 0.02em;
 }
+
+@include desktop {
+   font-size: 14px;
+   line-height: (16 / 14);
+}
+}
+
 
 
 
@@ -109,12 +121,30 @@ color: var(--primary-text-color);
 .menu {
  display: none;
  gap: 50px;
+
+ @include tablet {
+   display: flex;
+ }
 }
 
 .contacts {
  display: none;
+ margin-left: auto;
  gap: 30px;
-}
+
+ @include tablet {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 10px;
+ }
+
+ @include desktop {
+      flex-direction: row;
+      gap: 40px;
+    }
+ }
+
 
 .header__container {
  display: flex;
