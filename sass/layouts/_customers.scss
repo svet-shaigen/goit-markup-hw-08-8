@@ -37,10 +37,21 @@
   }
   
   .customers-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+   
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
     gap: 30px;
+
+    @include mobile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+
+
   }
   
   .customers-icon {
@@ -57,15 +68,16 @@
  .customers-item {
   width: 100%;
   
-  @media screen and (min-width:480px) {
+  @include mobile {
+    
     flex-basis: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width:738px) {
+  @include tablet {
     flex-basis: calc((100% - 90px) / 3);
   }
 
-  @media screen and (min-width:1200px) {
+  @include desktop {
     flex-basis: calc((100% - 150px) / 6);
   }
  }
