@@ -11,11 +11,11 @@
   }
   
   .customers-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 210px;
+    display: block;
+    padding: 16px 0;
+    text-align: center;
     height: 92px;
+   
   
     border: 1px solid var(--soc-bg-color);
     border-radius: 4px;
@@ -27,29 +27,28 @@
       border-color: var(--accent-color);
     }
 
-    @media screen and (min-width:768px) {
+    @include mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    
+    }
+
+    @include tablet {
       max-width: 226px;
     }
 
-    @media screen and (min-width:1200px) {
+    @include desktop {
       width: 170px;
     }
   }
   
   .customers-list {
-   
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-
-    @include mobile {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      
-    }
 
 
   }
