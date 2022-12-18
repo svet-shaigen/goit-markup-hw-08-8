@@ -984,7 +984,6 @@ img {
   left: 50%;
   padding: 40px;
   width: 90%;
-  height: 90%;
   background-color: var(--primary-bg-color);
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1282,6 +1281,15 @@ img {
   border: 1px solid transparent;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+}
+
+.check-condition {
+  font-size: 12px;
+  letter-spacing: 1, 1666666;
+}
+
+label {
+  cursor: default;
 }
 
 .filter-btn {
