@@ -726,9 +726,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -738,6 +737,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-address {
     text-align: left;
+    margin-right: 70px;
     margin-bottom: 0;
   }
 }
@@ -841,6 +841,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-soc-form {
+    display: block;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-soc-form {
     margin-left: 93px;

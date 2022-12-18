@@ -18,22 +18,23 @@
   }
 
  .footer-container {
- 
    @media screen and (min-width:768px) and (max-width: 1199px) {
     max-width: 768px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
    
-    justify-content: space-between;
- 
  }
 }
+
+
 
   .footer-address {
     margin-bottom: 60px;
 
     @media screen and (min-width:1200px) {
       text-align: left;
+      margin-right: 70px;
       margin-bottom: 0;
       }
   }
@@ -132,7 +133,12 @@
   
   
   .footer-soc-form {
-    @media screen and (min-width:1200px) {
+    @include tablet {
+      display: block;
+      text-align: center;
+    } 
+
+    @include desktop {
     margin-left: 93px;
     
     }
