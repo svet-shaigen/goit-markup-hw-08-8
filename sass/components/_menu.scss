@@ -89,9 +89,8 @@
     &:focus {
     color: var(--accent-color);
     }
-}
+  }
 
-  
 
 
     .mob-menu-contact__link {
@@ -100,9 +99,12 @@
         line-height: calc (40 / 34);
         letter-spacing: 0.02em;
         color: var(--accent-color);
-       
-       
-    }
+
+        @media screen and (max-width:479px) {
+            font-size: 30px;
+            line-height: (36 / 30);
+          }
+         }
 
     
     .mob-menu-mail__link {
@@ -144,6 +146,8 @@
         border-right-color: var(--border-modal-input);
     }
    
- 
-
-   
+    .menu-list__item:not(:last-child),
+    .mob-menu-contact__list:not(:last-child){
+      margin-bottom: 32px;
+    }
+  
