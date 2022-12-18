@@ -1283,15 +1283,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.check-condition {
-  font-size: 12px;
-  letter-spacing: 1, 1666666;
-}
-
-label {
-  cursor: default;
-}
-
 .filter-btn {
   font-family: inherit;
   font-style: normal;
