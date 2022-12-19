@@ -198,30 +198,17 @@
   }
   
   .check-link {
+    text-decoration: underline;
     margin-left: 5px;
     color: var(--accent-color);
-  
-  
-    &::after {
-    content: "";
-    color: var(--accent-color);
-  
-    position: absolute;
-    left: 130px;
-    bottom: 3px;
-    display: block;
-    width: 100%;
-    height: 1px;
-    transform: scaleX(0.25);
-  
-    background-color: var(--accent-color);
+
 
     @include desktop {
       left: 148px;
       bottom: 4px;
       }
   }
-}
+
   
   .modal-field {
     position: relative;
